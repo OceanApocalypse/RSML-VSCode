@@ -1,0 +1,35 @@
+{
+    "name": "rsml",
+    "description": "Syntax highlighting for RSML (Red Sea Markup Language).",
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/OceanApocalypseStudios/RedSeaMarkupLanguage"
+	},
+    "icon": "./logo.png",
+    "displayName": "Red Sea Markup Language",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.22.0"
+    },
+    "categories": ["Programming Languages"],
+    "contributes": {
+        "languages": [
+            {
+                "id": "rsml",
+                "extensions": [".rsml"],
+                "aliases": ["RSML"],
+                "icon": {
+                    "light": "./lang_icon_light.png",
+                    "dark": "./lang_icon.png"
+                }
+            }
+        ],
+        "grammars": [
+            {
+                "language": "rsml",
+                "scopeName": "source.rsml",
+                "path": "./syntaxes/rsml.tmLanguage.json"
+            }
+        ]
+    }
+}

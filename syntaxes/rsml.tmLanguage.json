@@ -1,0 +1,49 @@
+{
+    "name": "rsml",
+    "scopeName": "source.rsml",
+    "patterns": [
+        {
+            "name": "keyword.operator.rsml",
+            "match": "->|!>|==|!=|>=|<=|>|<"
+        },
+        {
+            "name": "keyword.other.rsml",
+            "match": "any|defined"
+        },
+        {
+            "name": "constant.language.rsml",
+            "match": "(?i)windows|linux|osx|debian|ubuntu|archlinux|freebsd|fedora|x64|x86|arm64|arm32|loongarch64(?-i)"
+        },
+        {
+            "begin": "@",
+            "beginCaptures": {
+                "0": {
+                    "name": "keyword.other.rsml"
+                }
+            },
+            "end": "\\W.*$",
+            "endCaptures": {
+                "0": {
+                    "name": "variable.parameter.rsml"
+                }
+            },
+            "name": "entity.name.class.rsml"
+        },
+        {
+            "name": "string.quoted.double.rsml",
+            "match": "\".*\""
+        },
+        {
+            "name": "constant.numeric.rsml",
+            "match": "-?\\d+(\\.\\d+)?"
+        },
+        {
+            "name": "comment.line.rsml",
+            "match": "#.+"
+        },
+        {
+            "name": "comment.block.rsml",
+            "match": "."
+        }
+    ]
+}
