@@ -3,46 +3,50 @@
     "scopeName": "source.rsml",
     "patterns": [
         {
-            "name": "keyword.operator.rsml",
-            "match": "->|!>|==|!=|>=|<=|>|<"
+            "name": "constant.language.rsml rsml.standard.specification",
+            "match": "^\\W*#\\W*!standard:.*$"
         },
         {
-            "name": "keyword.other.rsml",
+            "name": "keyword.operator.rsml rsml.operators",
+            "match": "!!!|\\?\\?\\?|\\|\\||->|!>|==|!=|>=|<=|<<|>|<"
+        },
+        {
+            "name": "keyword.other.rsml rsml.case-sensitive.keyword",
             "match": "any|defined"
         },
         {
-            "name": "constant.language.rsml",
+            "name": "constant.language.rsml rsml.case-insensitive.keyword",
             "match": "(?i)windows|linux|osx|debian|ubuntu|archlinux|freebsd|fedora|x64|x86|arm64|arm32|loongarch64(?-i)"
         },
         {
             "begin": "@",
             "beginCaptures": {
                 "0": {
-                    "name": "keyword.other.rsml"
+                    "name": "keyword.other.rsml rsml.special.action.operator"
                 }
             },
             "end": "\\W.*$",
             "endCaptures": {
                 "0": {
-                    "name": "variable.parameter.rsml"
+                    "name": "variable.parameter.rsml rsml.special.action.arg"
                 }
             },
-            "name": "entity.name.class.rsml"
+            "name": "entity.name.class.rsml rsml.special.action"
         },
         {
-            "name": "string.quoted.double.rsml",
+            "name": "string.quoted.double.rsml rsml.strings",
             "match": "\".*\""
         },
         {
-            "name": "constant.numeric.rsml",
+            "name": "constant.numeric.rsml rsml.numbers",
             "match": "-?\\d+(\\.\\d+)?"
         },
         {
-            "name": "comment.line.rsml",
+            "name": "comment.line.rsml rsml.comment.line",
             "match": "#.+"
         },
         {
-            "name": "comment.block.rsml",
+            "name": "comment.block.rsml rsml.comment.global",
             "match": "."
         }
     ]
