@@ -43,11 +43,7 @@
         },
         {
             "name": "comment.line.rsml rsml.comment.line",
-            "match": "#.+"
-        },
-        {
-            "name": "comment.block.rsml rsml.comment.global",
-            "match": "."
+            "match": "^\\W*#.+$"
         }
     ]
 }

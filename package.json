@@ -16,7 +16,7 @@
         "languages": [
             {
                 "id": "rsml",
-                "extensions": [".rsml", ".rsea"],
+                "extensions": [".rsea", ".decision"],
                 "aliases": ["RSML"],
                 "icon": {
                     "light": "./lang_icon_light.png",
