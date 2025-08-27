@@ -1,0 +1,5 @@
+*.pdn
+.gitignore
+.editorconfig
+.vscode
+.vscode/*.*
