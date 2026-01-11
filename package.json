@@ -31,6 +31,12 @@
                 "scopeName": "source.rsml",
                 "path": "./syntaxes/rsml.tmLanguage.json"
             }
+        ],
+        "snippets": [
+            {
+                "language": "rsml",
+                "path": "./snippets/rsml_snippets.json"
+            }
         ]
     }
 }

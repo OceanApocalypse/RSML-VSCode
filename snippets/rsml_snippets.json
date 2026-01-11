@@ -1,0 +1,15 @@
+{
+    "Match all OS": {
+        "prefix": ["all"],
+        "body": ["-> any any any \"value\""],
+        "description": "All."
+    },
+    "Windows {VER} x64": {
+        "prefix": ["win-x64"],
+        "body": ["-> windows ${0:10} x64"]
+    },
+    "Windows {VER} x86": {
+        "prefix": ["win-x86"],
+        "body": ["-> windows ${0:10} x86"]
+    }
+}
