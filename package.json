@@ -5,7 +5,7 @@
 		"type": "git",
 		"url": "https://github.com/OceanApocalypseStudios/RedSeaMarkupLanguage"
 	},
-    "icon": "./logo.png",
+    "icon": "./rsml-logo.png",
     "displayName": "Red Sea Markup Language",
     "version": "1.0.0",
     "engines": {
