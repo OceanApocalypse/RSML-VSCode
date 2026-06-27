@@ -1,6 +1,9 @@
 {
-    "name": "rsml",
+    "name": "RSML",
     "scopeName": "source.rsml",
+    "fileTypes": [
+        "rsea", "rsml", "decision"
+    ],
     "patterns": [
         {
             "name": "constant.language.rsml rsml.standard.specification",
@@ -8,11 +11,11 @@
         },
         {
             "name": "keyword.operator.rsml rsml.operators",
-            "match": "!!!|\\?\\?\\?|\\|\\||->|!>|==|!=|>=|<=|<<|>|<"
+            "match": "!!!|\\?\\?\\?|\\|\\||->|!>|N>|==|!=|>=|<=|<<|>|<"
         },
         {
             "name": "keyword.other.rsml rsml.case-sensitive.keyword",
-            "match": "any|defined"
+            "match": "any|defined|undefined"
         },
         {
             "name": "constant.language.rsml rsml.case-insensitive.keyword",
