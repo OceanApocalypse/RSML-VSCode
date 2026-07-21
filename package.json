@@ -11,7 +11,7 @@
     "engines": {
         "vscode": "^1.22.0"
     },
-    "publisher": "norbcodes",
+    "publisher": "OceanApocalypseStudios",
     "categories": ["Programming Languages"],
     "contributes": {
         "languages": [
