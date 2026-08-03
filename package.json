@@ -1,24 +1,32 @@
 {
     "name": "rsml",
-    "description": "Syntax highlighting for RSML (Red Sea Markup Language).",
+    "description": "Syntax highlighting for RSML (Red Sea Modern Language).",
     "repository": {
-		"type": "git",
-		"url": "https://github.com/OceanApocalypseStudios/RedSeaMarkupLanguage"
-	},
+        "type": "git",
+        "url": "https://github.com/OceanApocalypse/RedSeaModernLanguage"
+    },
     "icon": "./rsml-logo.png",
-    "displayName": "Red Sea Markup Language",
+    "displayName": "Red Sea Modern Language",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.22.0"
     },
-    "publisher": "OceanApocalypseStudios",
-    "categories": ["Programming Languages"],
+    "publisher": "OceanApocalypse",
+    "categories": [
+        "Programming Languages"
+    ],
     "contributes": {
         "languages": [
             {
                 "id": "rsml",
-                "extensions": [".rsea", ".decision", ".rsml"],
-                "aliases": ["RSML"],
+                "extensions": [
+                    ".rsea",
+                    ".decision",
+                    ".rsml"
+                ],
+                "aliases": [
+                    "RSML"
+                ],
                 "icon": {
                     "light": "./lang_icon_light.png",
                     "dark": "./lang_icon.png"
